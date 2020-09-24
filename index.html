@@ -8,7 +8,8 @@
     <meta name="author" content="Jonny Kemp">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.19/dist/shoelace/shoelace.css"> 
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">   
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
 
@@ -35,35 +36,39 @@
             </div>
         </div>
     </header>
-
-    <main>
-        <section class="container">
-            <div class="pure-g">
-                <div class="pure-u-1">
-                    <!-- setting box sizing at screen breaks and background for main content -->
-                <div class="col-lg-8 col-md-7 col-sm my-5 mx-3 bg-white">
-                    <div class="row">
-                        <!-- Setting text color, margins/padding, as well as a bottom border for title -->
-                        <div class="col text-info border-bottom p-2 m-4">
-                            <h1>About Me</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <!-- float left keeps the photo where it needs to be on the left, and gets the text to wrap around it -->
-                            <img src="./Assets/Images/bananas.jpg" class="float-left mr-3" alt="Jonny Kemp in Banana shirt">
-                            <p>I Geek out over Geography, make maps, crunch numbers/code on computers, and generally play around with stuff. Life is short so do what you love, and I love a lot of different things. So I thought I would build a website to show off some of the exploits my monkey brain comes up with from time to time. This is a constant work in progress. It serves as a repository for me to brain dump all things work, life, and play. None of it is exhaustive or meant to be a walk through, but if you have questions about any of it please reach out to me.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <p>When I am not working on maps, or coding on computers I enjoy the outdoors. Hiking, backpacking, biking, surfing, fishing, etc. I also enjoy cooking and building DIY projects. I think all of these things are important to keep your brain well lubricated and balanced for complicated tasks like coding and developing.</p>
-                        </div>
+    <main class="container">
+        <section id="about" class="pure-g">
+            <div class="pure-u-1 pure-u-md-7-8 pure-u-lg-1-2" >
+                <div class="pure-g">
+                    <div class="pure-u-1">
+                        <!-- float left keeps the photo where it needs to be on the left, and gets the text to wrap around it -->
+                        <img src="./Assets/Images/bananas.jpg" alt="Jonny Kemp in Banana shirt">
+                        <p>I Geek out over Geography, make maps, crunch numbers/code on computers, and generally play around with stuff. Life is short so do what you love, and I love a lot of different things. So I thought I would build a website to show off some of the exploits my monkey brain comes up with from time to time. This is a constant work in progress. It serves as a repository for me to brain dump all things work, life, and play. None of it is exhaustive or meant to be a walk through, but if you have questions about any of it please reach out to me.</p>
+                        <p>When I am not working on maps, or coding on computers I enjoy the outdoors. Hiking, backpacking, biking, surfing, fishing, etc. I also enjoy cooking and building DIY projects. I think all of these things are important to keep your brain well lubricated and balanced for complicated tasks like coding and developing.</p>
                     </div>
                 </div>
+                <div class="pure-g">
+                    <div class="pure-u-1">
+                    </div>
+    
                 </div>
-                
             </div>
+            
+            
+        </section>
+        <section id="portfolio" class="pure-g hidden">
+            <div class="pure-u-1">
+                <!-- setting box sizing at screen breaks and background for main content -->
+                <h2>portfolio</h2>
+            </div>
+            
+        </section>
+        <section id="contact" class="pure-g hidden">
+            <div class="pure-u-1">
+                <!-- setting box sizing at screen breaks and background for main content -->
+                <h2>contact</h2>
+            </div>
+            
         </section>
     </main>
 
@@ -76,6 +81,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.19/dist/shoelace/shoelace.esm.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>

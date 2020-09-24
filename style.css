@@ -14,8 +14,10 @@ html, button, input, select, textarea,
     position:fixed;
     top: 0;
     width: 100%;
-    margin-bottom: 20vh;
     
+}
+section{
+    justify-content: center;
 }
 h1,h2,h2,h3,h4,h5,h6{
     font-weight: bold;
