@@ -1,0 +1,29 @@
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: 'Volkhov', Times, "Times New Roman", serif;
+    line-height: 30px;
+}
+.nav::part(body){
+    background-color: paleturquoise;
+}
+.nav::part(tabs){
+    background-color: white;
+}
+.navbar{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 20vh;
+    
+}
+h1,h2,h2,h3,h4,h5,h6{
+    font-weight: bold;
+}
+main{
+    margin-top: 30vh;
+}
+h1{
+    float: right;
+    margin-right: 1em
+}
