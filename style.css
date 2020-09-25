@@ -3,9 +3,10 @@ html, button, input, select, textarea,
     /* Set your content font stack here: */
     font-family: 'Volkhov', Times, "Times New Roman", serif;
     line-height: 30px;
+    color: #5C6870;
 }
 .nav::part(body){
-    background-color: paleturquoise;
+    background-color:#98C4C5;
 }
 .nav::part(tabs){
     background-color: white;
@@ -16,16 +17,62 @@ html, button, input, select, textarea,
     width: 100%;
     
 }
+.me-img{
+    border-radius: 20%;
+}
 section{
     justify-content: center;
 }
 h1,h2,h2,h3,h4,h5,h6{
     font-weight: bold;
 }
+h2{
+    background-image: linear-gradient(#fff 60%,#57BEFF 55%);
+}
 main{
-    margin-top: 30vh;
+    margin-top: 15vh;
 }
 h1{
     float: right;
     margin-right: 1em
 }
+
+.about * { 
+    margin: 1em 0;
+    justify-content: center;
+
+}
+.interest  sl-icon {
+    font-size: 5em;
+}
+.interest .pure-g{
+    justify-content: center;
+    margin: 5em 0;
+}
+.card , .about, .portfolio{
+    text-align: center;
+    justify-content: center;
+    
+}
+.card{
+    margin: 2em 0
+}
+.card p {
+    margin: 0 1em;
+}
+
+/* Portfolio Cards */
+.card-overview {
+    max-width: 300px;
+  }
+
+  .card-overview small {
+    color: var(--sl-color-gray-50);
+  }
+
+  .card-overview [slot="footer"] {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+  }
+

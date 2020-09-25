@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
 
-
 </head>
 <body>
     <header>
@@ -40,28 +39,96 @@
         <section id="about" class="pure-g">
             <div class="pure-u-1 pure-u-md-7-8 pure-u-lg-1-2" >
                 <div class="pure-g">
-                    <div class="pure-u-1">
+                    <div class="pure-u-1 about">
+                        <div class="pure-g">
+                            <div class="pure-u">
+                                <h2>About me</h2>
+                            </div>
+                        </div>
                         <!-- float left keeps the photo where it needs to be on the left, and gets the text to wrap around it -->
-                        <img src="./Assets/Images/bananas.jpg" alt="Jonny Kemp in Banana shirt">
+                        <img class="pure-image me-img" src="./Assets/Images/bananas.jpg" alt="Jonny Kemp in Banana shirt">
                         <p>I Geek out over Geography, make maps, crunch numbers/code on computers, and generally play around with stuff. Life is short so do what you love, and I love a lot of different things. So I thought I would build a website to show off some of the exploits my monkey brain comes up with from time to time. This is a constant work in progress. It serves as a repository for me to brain dump all things work, life, and play. None of it is exhaustive or meant to be a walk through, but if you have questions about any of it please reach out to me.</p>
                         <p>When I am not working on maps, or coding on computers I enjoy the outdoors. Hiking, backpacking, biking, surfing, fishing, etc. I also enjoy cooking and building DIY projects. I think all of these things are important to keep your brain well lubricated and balanced for complicated tasks like coding and developing.</p>
                     </div>
                 </div>
-                <div class="pure-g">
-                    <div class="pure-u-1">
+                
+                <section class="interest">
+                    <div class="pure-g">
+                        <div class="pure-u">
+                            <h2>What I love Doing</h2>
+                        </div>
                     </div>
-    
-                </div>
-            </div>
-            
-            
+                    <div class="pure-g">
+                        <div class="pure-u-1 card pure-u-md-1-3">
+                            <sl-icon name="globe"></sl-icon>
+                            <h3>GIS</h3>
+                            <p>Geographic Information Sciences. Using geospatial information to empower decision making</p>
+                        </div>
+                        <div class="pure-u-1 card pure-u-md-1-3">
+                            <sl-icon name="file-code"></sl-icon>
+                            <h3>Coding</h3>
+                            <p>The thrill of building custom applications (usually geospatial) is hard to beat</p>
+                        </div>
+                        <div class="pure-u-1 card pure-u-md-1-3">
+                            <sl-icon name="bar-chart"></sl-icon>
+                            <h3>Data Geeking</h3>
+                            <p>Give me a good piece of data. Lets dig into it, have some fun and get some data viz going.</p>
+                        </div>
+        
+                    <!-- </div>
+                    <div class="pure-g"> -->
+                        <div class="pure-u-1 card pure-u-md-1-3">
+                            <sl-icon name="tree"></sl-icon>
+                            <h3>Outdoor play</h3>
+                            <p>Close the laptop and crank some peddles, hop on a surfboard, or strap on some skis. It does the mind and body well</p>
+                        </div>
+                        <div class="pure-u-1 card pure-u-md-1-3">
+                            <sl-icon name="camera"></sl-icon>
+                            <h3>Photography</h3>
+                            <p>Am I good at it? No. Do I do it often? No. Do I enjoy it. Yes.</p>
+                        </div>
+                        <div class="pure-u-1 card pure-u-md-1-3">
+                            <sl-icon name="nut"></sl-icon>
+                            <h3>Tinkering</h3>
+                            <p>From building campers, to remodeling a bathroom, to repairing bikes. If  I can break it, I enjoy tinkering on it</p>
+                        </div>
+        
+                    </div>
+                </section>
+            </div>  
         </section>
         <section id="portfolio" class="pure-g hidden">
-            <div class="pure-u-1">
-                <!-- setting box sizing at screen breaks and background for main content -->
-                <h2>portfolio</h2>
-            </div>
-            
+            <div class="pure-u-1 pure-u-md-7-8 pure-u-lg-1-2" >
+                <div class="pure-g">
+                    <div class="pure-u-1 about">
+                        <div class="pure-g">
+                            <div class="pure-u">
+                                <h2>Portfolio</h2>
+                            </div>
+                        </div>
+                        <div class="pure-g">
+                            <div class="pure-u-1">
+                                <sl-card class="card-overview">
+                                    <img 
+                                      slot="image" 
+                                      src="https://images.unsplash.com/photo-1559209172-0ff8f6d49ff7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" 
+                                      alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+                                    >
+                                  
+                                    <strong>Mittens</strong><br>
+                                    This kitten is as cute as he is playful. Bring him home today!<br>
+                                    <small>6 weeks old</small>
+                                  
+                                    <div slot="footer">
+                                      <sl-button type="primary" pill>More Info</sl-button>
+                                    </div>
+                                </sl-card>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </section>
         <section id="contact" class="pure-g hidden">
             <div class="pure-u-1">
@@ -74,10 +141,7 @@
 
     <!-- two divs make up the foorter with different padding bg bootstrap classes used to color them. Outside of main container, and targeted with style.css -->
     <footer>
-        <div class="p-1 mg-1 bg-info"></div>
-        <div class="p-3 bg-secondary">
-            <p class="copyright">&#169;Copyright</p>
-        </div>
+        
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.19/dist/shoelace/shoelace.esm.js"></script>
