@@ -11,6 +11,11 @@ $(document).ready(function(){
         })
     })
 
+    
+    $(".date-since").each(function(){
+        $(this).text((moment($(this).text(), "YYYYMMDD").fromNow()));
+    })
+
 
 
 
