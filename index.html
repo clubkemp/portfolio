@@ -331,24 +331,27 @@
                                         
                                     </div>
                                     <div class="pure-u-1-4">
-                                        <sl-button  class="trigger" type="warning">Send a note</sl-button>
+                                        <sl-button  class="trigger" type="info">Email</sl-button>
                                     </div>
                                 </div>
                                 <br>
                                 <div class="pure-g">
                                     <div id="myModal"class="pure-u modal">
                                         <div class="modal-content">
-                                            <h3>Or just send me a note</h3>
-                                            <sl-form class="input-validation-required">
-                                                <sl-input name="name" label="Name" required></sl-input>
-                                                <br>
-                                                <sl-textarea name="comment" label="Comment" required></sl-textarea>
-                                                <br>
-                                                <sl-checkbox required>Check me before submitting</sl-checkbox>
-                                                <br><br>
-                                                <sl-button type="primary" submit>Submit</sl-button>
-                                            </sl-form>
                                             <span class="close">&times;</span>
+                                            <h3>Or just send me a note</h3>
+                                            <form class="pure-form pure-form-stacked" action="https://submit-form.com/78jjmLY_T-kl38fL6qfRr" target="_self">
+                                                <!-- All elements must have a name attribute -->
+                                                <label for="subject">Subject</label>
+                                                <input class="small-input" type="text" name="subject" placeholder="Subject">
+                                                <label for="message">Message</label>
+                                                <textarea name="message" placeholder="Message"></textarea>
+                                                <label  for="email">Email</label>
+                                                <input class="small-input" type="text" name="email" placeholder="Email">
+                                                <!-- A button of type submit -->
+                                                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                                             </form>
+                                            
                                             
                                         </div>
                                     </div>
