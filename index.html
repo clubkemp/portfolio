@@ -12,11 +12,36 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header>
-        <!-- using bootstrap nav bar component, outside of containter to span entire page and stick to top -->
+        <!-- <div class="custom-wrapper pure-g" id="menu">
+            <div class="pure-u-1 pure-u-md-1-3">
+                <div class="pure-menu">
+                    <a href="#" class="pure-menu-heading custom-brand">Brand</a>
+                    <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+                </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <div class="pure-menu pure-menu-horizontal custom-can-transform">
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Yahoo</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">W3C</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
         <div class="pure-g navbar">
             <div class="pure-u-1">
                 <sl-tab-group class="nav" placement="bottom">
@@ -30,7 +55,7 @@
                   
                     <sl-tab-panel name="about">Learn a little more about me</sl-tab-panel>
                     <sl-tab-panel name="portfolio">Some of my tinkerings</sl-tab-panel>
-                    <sl-tab-panel name="contact">In case you need to reach me</sl-tab-panel>
+                    <sl-tab-panel name="contact">If you need to reach me</sl-tab-panel>
                 </sl-tab-group>
             </div>
         </div>
@@ -39,7 +64,7 @@
         <section id="about" class="pure-g">
             <div class="pure-u-1 pure-u-md-7-8 pure-u-lg-1-2" >
                 <div class="pure-g">
-                    <div class="pure-u-1 about">
+                    <div class="pure-u-1 title">
                         <div class="pure-g">
                             <div class="pure-u">
                                 <h2>About me</h2>
@@ -100,7 +125,7 @@
         <section id="portfolio" class="pure-g hidden">
             <div class="pure-u-1 pure-u-md-7-8 pure-u-lg-1-2" >
                 <div class="pure-g">
-                    <div class="pure-u-1 about">
+                    <div class="pure-u-1 title">
                         <div class="pure-g">
                             <div class="pure-u">
                                 <h2>Portfolio</h2>
@@ -111,12 +136,12 @@
                                 <sl-card class="card-overview">
                                     <img 
                                       slot="image" 
-                                      src="https://images.unsplash.com/photo-1559209172-0ff8f6d49ff7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" 
-                                      alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+                                      src="./Assets/Images/freshair.JPG" 
+                                      alt="freshair webapp"
                                     >
                                   
                                     <strong>Fresh Air</strong><br>
-                                    A lightweight Recreation/beer finder using Materialize, APIs, and JQuery<br>
+                                    A Recreation/beer finder using Materialize and JQuery<br>
                                     <small class="date-since">20200925</small>
                                   
                                     <div slot="footer">
@@ -134,46 +159,91 @@
                                 <sl-card class="card-overview">
                                     <img 
                                       slot="image" 
-                                      src="https://images.unsplash.com/photo-1559209172-0ff8f6d49ff7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" 
-                                      alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+                                      src="./Assets/Images/sheets2map.JPG" 
+                                      alt="weather dashboard"
+
                                     >
                                   
-                                    <strong>Mittens</strong><br>
-                                    This kitten is as cute as he is playful. Bring him home today!<br>
-                                    <small class="date-since">6 weeks old</small>
-                                  
+                                    <strong>Sheets2Map</strong><br>
+                                    Go ahead, give your google sheets some map swag<br>
+                                    <small class="date-since">20200411</small>
+                            
                                     <div slot="footer">
-                                      <sl-button type="primary" pill>More Info</sl-button>
+                                        <sl-button  href="https://github.com/clubkemp/sheets2map" target="blank" type ="info">
+                                            <sl-icon slot="prefix" name="code-square"></sl-icon>
+                                            Github
+                                          </sl-button>  
+                                          <sl-button  href="https://clubkemp.github.io/sheets2map" target="blank" type ="info">
+                                            <sl-icon slot="prefix" name="joystick"></sl-icon>
+                                            Deployed
+                                          </sl-button>  
+                                    
                                     </div>
                                 </sl-card>
                                 <sl-card class="card-overview">
                                     <img 
                                       slot="image" 
-                                      src="https://images.unsplash.com/photo-1559209172-0ff8f6d49ff7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" 
-                                      alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+                                      src="./Assets/Images/Weather.JPG" 
+                                      alt="weather dashboard"
                                     >
                                   
-                                    <strong>Mittens</strong><br>
-                                    This kitten is as cute as he is playful. Bring him home today!<br>
-                                    <small>6 weeks old</small>
+                                    <strong>Weather Dashboard</strong><br>
+                                    First build using Pure CSS, as well as calling my first API<br>
+                                    <small class="date-since">20200921</small>
                                   
                                     <div slot="footer">
-                                      <sl-button type="primary" pill>More Info</sl-button>
+                                        <sl-button  href="https://github.com/clubkemp/uw-weather" target="blank" type ="info">
+                                            <sl-icon slot="prefix" name="code-square"></sl-icon>
+                                            Github
+                                          </sl-button>  
+                                          <sl-button  href="https://clubkemp.github.io/uw-weather" target="blank" type ="info">
+                                            <sl-icon slot="prefix" name="joystick"></sl-icon>
+                                            Deployed
+                                          </sl-button>  
+                                    
                                     </div>
                                 </sl-card>
                                 <sl-card class="card-overview">
                                     <img 
                                       slot="image" 
-                                      src="https://images.unsplash.com/photo-1559209172-0ff8f6d49ff7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" 
-                                      alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+                                      src="./Assets/Images/schedule.JPG" 
+                                      alt="day planner"
                                     >
                                   
-                                    <strong>Mittens</strong><br>
-                                    This kitten is as cute as he is playful. Bring him home today!<br>
-                                    <small>6 weeks old</small>
+                                    <strong>Day Planner</strong><br>
+                                    Persistant local storage for a day schedule<br>
+                                    <small class="date-since">20200918</small>
                                   
                                     <div slot="footer">
-                                      <sl-button type="primary" pill>More Info</sl-button>
+                                        <sl-button  href="https://github.com/clubkemp/uw-schedule" target="blank" type ="info">
+                                            <sl-icon slot="prefix" name="code-square"></sl-icon>
+                                            Github
+                                          </sl-button>  
+                                          <sl-button  href="https://clubkemp.github.io/uw-schedule" target="blank" type ="info">
+                                            <sl-icon slot="prefix" name="joystick"></sl-icon>
+                                            Deployed
+                                          </sl-button>  
+                                    
+                                    </div>
+                                </sl-card>
+                                <sl-card class="card-overview">
+                                    <img 
+                                      slot="image" 
+                                      src="./Assets/Images/travel.jpg" 
+                                      alt="Travel Map"
+                                    >
+                                  
+                                    <strong>G.A.R.Y Map</strong><br>
+                                    A little leaflet of our travels across the country <br>
+                                    <small class="date-since">20181001</small>
+                                  
+                                    <div slot="footer">
+                                          <sl-button  href="https://clubkemp.com/travelmap.com" target="blank" type ="info">
+                                            <sl-icon  slot="prefix" name="joystick"></sl-icon>
+                                            Deployed
+                                          </sl-button>  
+                                    </div>
+                                    
                                     </div>
                                 </sl-card>
                                 
@@ -185,18 +255,91 @@
             </div>    
         </section>
         <section id="contact" class="pure-g hidden">
-            <div class="pure-u-1">
-                <!-- setting box sizing at screen breaks and background for main content -->
-                <h2>contact</h2>
-            </div>
-            
-        </section>
-    </main>
-
-    <!-- two divs make up the foorter with different padding bg bootstrap classes used to color them. Outside of main container, and targeted with style.css -->
-    <footer>
+            <div class="pure-u-1 pure-u-md-7-8 pure-u-lg-1-2">
+                <div class="pure-g">
+                    <div class="pure-u-1 title">
+                        <div class="pure-g">
+                            <div class="pure-u ">
+                                <h2>Contact</h2>
+                            </div>
+                        </div>
+                        <div class="pure-g">
+                            <div class="pure-u">
+                                <h3>New card, wadda you think?</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="contact-content">
+                        <div class="pure-u animation-sandbox">
+                            <div class="pure-g">
+                                <div class="biz-card">
+                                    <div class="pure-g bcard-head cardback">
+                                        <div class="pure-u">
+                                            <div class="number big">360 201 1985</div>
+                                        </div>
+                                        <div class="pure-u name">
+                                            <div class="name">
+                                                <p><span class="big">F</span>ull &amp; <span class="big">S</span>tack</p>
+                                                <p><span class="med no-space">P</span><span class="small no-space">lace and
+                                                    </span><span class="med no-space">T</span><span
+                                                        class="small no-space">echnology</span></p>
+                                            </div>
+                                        </div>
         
-    </footer>
+                                    </div>
+                                    <div class="pure-g bcard-body cardback">
+                                        <div class="pure-u">
+                                            <p><span class="big">J</span>onny <span class="big">Kemp</span></p>
+                                            <p><span class="big">G</span>eospatial <span class="big">D</span>eveloper</p>
+        
+                                        </div>
+                                    </div>
+                                    <div class="pure-g bcfoot cardback">
+                                        <div class="pure-u">
+                                            <p><span class="med">2622 J</span><span class="small">aeger </span><span
+                                                    class="med">S</span><span class="small">treet </span><span
+                                                    class="med">B</span><span class="small">ellingham<span class="med">, W. A.
+                                                        98225 G</span><span class="small">ithub </span><span
+                                                        class="med">clubkemp</span></span></p>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="pure-g real-contact hidden">
+                            <div class="pure-u">
+                                <div class="pure-g">  
+                                    <div class="pure-u">
+                                        <h3>American Phyco jokes aside. Check out the real deal </h3>
+                                        <sl-animation name="bounce" easing="ease-in-out" duration="2000">
+                                            <sl-icon class ="more" name="arrow-bar-down"></sl-icon>    
+                                        </sl-animation>
+                                    </div>            
+                                </div>
+                                <div class="pure-g">
+                                    <div class="pure-u-1-3">
+                                        <sl-button href="https://github.com/clubkemp" target="blank" type="primary"> Github</sl-button>
+                                    </div>
+                                    <div class="pure-u-1-3">
+                                        <sl-button href="https://www.linkedin.com/in/jonny-kemp/" target="blank" type="success">LinkedIn</sl-button>
+                                    </div>
+                                    <div class="pure-u-1-3">
+                                        <!-- href="https://www.dropbox.com/s/ssdnzu7erq9ohe8/Resume_Code_09-08-2020.doc?dl=0" target="blank" -->
+                                        <sl-button  type="warning">Resume</sl-button>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>
+        
+        </section>
+        </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js" integrity="sha512-Izh34nqeeR7/nwthfeE0SI3c8uhFSnqxV0sI9TvTcXiFJkMd6fB644O64BRq2P/LA/+7eRvCw4GmLsXksyTHBg==" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.19/dist/shoelace/shoelace.esm.js"></script>
