@@ -1,10 +1,10 @@
-# Sample Portfolio page using Bootstrap 4
+# Jonny Kemp Portfolio
 
 ## Description 
 
-Being confident in writing your skelton in HTML is important. If you want that skeleton to look good, you need to wrap it in beautiful skin using CSS. Styling in front end web development involves and intese amount of trial, error, and experience to get layouts right. Putting together a thematic cohesive page is a beast all on it's own. [Bootstrap](https://bootstrap.com/) is a handy toolkit that allows rapid development of mobile friendly websites with minimal CSS styling
+Refactor refactor refactor. That's how you get better by constantly rebuilding what you've already done. This repo constitutes a v2 of my attempts at building a portfolio. Using the original [portfolio](https://clubkemp.github.io/uw-portfolio/) page where we used bootstrap, I was able to get most of my content copy. 
 
-Using the base 12 grid system, [Bootstrap](https://bootstrap.com/) allows us to set individual breakpoints using screen sizes (sm, md, lg, xl) to get the html elements displayed exactly how we want to. For this sample portfolio, I designed a three page responsive layout using Bootstrap. My personal goal was to use as little custom css as possible to get the page looking as close to the mock up guide we were provided. 
+I wanted to experiment with different css frameworks, and was often frustrated on tearing down the bootstrap stylingto get the exact look it wanted. Don't get me wrong, bootstrap looks really good, but as soon as you want to change that look it can be frustrating. I landed on using Pure CSS for the grid and a few componenets, and shoelace JS as a way to expand on the component sets. WOrked like a charm
 
 ## Installation
 
@@ -19,5 +19,5 @@ Shout out to the UW/trilogy instructional team  for showing us the ropes. Big up
 
 ## License
 
-CC0 1.0 Universal
+MIT
 
